@@ -1,0 +1,68 @@
+@charset "utr-8";
+@import url(https://meyerweb.com/eric/tools/css/reset/reset.css);
+
+section{ 
+    font-family: 'Nanum Gothic', sans-serif; 
+    width: 1200px;
+}
+
+#event_link ul{
+    clear: both;
+}
+
+#event_link ul li{
+    /* display: inline-block; */
+    float: left;
+    margin: 5px;
+    line-height: 40px;
+
+}
+
+#event_title h2{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+
+
+#event_list ul{
+    position: relative;
+}
+
+#event_list ul li{
+    float: left;
+    text-align: center;
+    margin: 30px;
+}
+
+.price{
+    margin: 30px;
+    font-size: 25px;
+    color: #555;
+}
+
+#event_list ul li img{
+    width: 525px;
+    height: 250px;
+}
+
+
+
+
+
+
+
+
+
+
+#ic_top{
+    text-align: center;
+    margin: 39px;
+}
+
+
+
+
+

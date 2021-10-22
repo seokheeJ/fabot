@@ -1,0 +1,91 @@
+@charset "utr-8";
+@import url(https://meyerweb.com/eric/tools/css/reset/reset.css);
+
+body { 
+    font-family: 'Nanum Gothic', sans-serif; 
+    width: 1200px;
+    margin: auto;
+}
+main{
+    width: 1140px;
+    margin-left: 26px;
+}
+#m_banner{
+    width: 1140px;
+}
+.m_title{
+    text-align: center;
+    font-size: 30px;
+    padding-top: 42px;
+    margin-bottom: 19px;
+}
+
+.more{
+    /* display: none; */
+    float: right;
+}
+#event ul{
+    clear: both;
+    display: flex;
+}
+
+#event ul li{
+    display: inline-block;
+    margin: 5px;
+    width: 560px;
+    
+}
+
+#best{
+    clear: both;
+}
+#best ul li{
+    float: left;
+    width: 270px;
+    text-align: center;
+    margin: 7px;
+}
+#review{
+    clear: both;
+}
+
+table{
+    width: 100%;
+}
+
+#review table tr.r_cate th{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #bbb;
+}
+
+#review table td{
+    vertical-align: middle;
+    /* border: 1px solid red; */
+    text-align: center;
+}
+#review table tr td{
+    padding-top: 10px;
+}
+#review table tr:nth-child(2) td{
+    padding-top: 20px;
+}
+
+
+#show{
+    position: relative;
+}
+
+#show_txt{
+    float: right;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #4d0000;
+    font-size: 30px;
+    position: absolute;
+    top: 120px; right: 0px;
+    padding: 20px 30px;
+}
+
+#show_txt li{
+    padding: 10px 5px;
+}

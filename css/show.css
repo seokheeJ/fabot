@@ -1,0 +1,113 @@
+@charset "utr-8";
+@import url(https://meyerweb.com/eric/tools/css/reset/reset.css);
+
+section{ 
+    font-family: 'Nanum Gothic', sans-serif; 
+    width: 1200px;
+}
+
+
+#show_link ul{
+    clear: both;
+}
+
+#show_link ul li{
+    /* display: inline-block; */
+    float: left;
+    margin: 5px;
+    line-height: 40px;
+
+}
+
+#show_title h2{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+#show_slide{}
+
+#des1{
+    text-align: center;
+}
+
+#des1 ul{
+    position: relative;
+}
+
+#des1 ul li{
+    display: inline-block;
+    /* position: absolute; */
+    line-height: 40px;
+    margin: 10px 20px;
+}
+
+#des1 ul li:first-child{
+    float: left;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    font-size: 40px;
+    color: #4d0000;
+}
+
+#des1 ul li:nth-child(2){
+    /* position: absolute; */
+    font-size: 30px;
+    color: #555;
+
+}
+
+
+#des1 ul li p{
+    text-align: left;
+    /* position: absolute; */
+}
+
+#s_map{
+    position: relative;
+}
+
+#s_map h2{
+    font-size: 40px;
+    color: #555;
+    margin: 31px 0;
+
+}
+
+
+
+#s_map ul{
+    margin: 34px 100px;
+    color: #555;
+}
+
+#s_map ul li{
+    float: left;
+    line-height: 30px;
+    margin: 0 20px;
+}
+
+#s_map ul li:nth-child(1){
+    font-size: 30px;
+    margin-top: 40px;
+}
+#s_map ul li:nth-child(3){
+    font-size: 25px;
+    margin-top: 5px;
+}
+
+#s_map ul li p{
+    margin: 5px;
+}
+
+#ic_top{
+    text-align: center;
+    margin: 39px;
+}
+
+
+
+
+

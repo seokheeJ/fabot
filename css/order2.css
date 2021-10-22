@@ -1,0 +1,290 @@
+@charset "utf-8";
+@import url(https://meyerweb.com/eric/tools/css/reset/reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+body{font-family: 'Noto Sans', sans-serif; color: #555;}
+a{text-decoration: none; color: inherit;}
+li{list-style: none;}
+button{
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+}
+.clearfix::before , .clearfix::after{
+    display: block; content: ''; clear: both;
+}
+.hide{position: absolute; top: -999999999999999px;}
+#wrap{
+    width: 1200px;
+    margin: 0 auto;
+}
+/* 공통 */
+header{
+    width: 100%;
+    height: 220px;
+    position: relative;
+}
+header .logo{
+    float: left;
+    width: 300px;
+    height: 150px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+header .top{
+    width: 400px;
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+header .top ul li{
+    float: left;
+    width: 25%;
+}
+header .search{
+    position: absolute;
+    top: 80px; left: 375px;
+}
+header .search input{
+   width: 400px;
+   height: 45px;
+   border: 1px solid #817878;
+   border-radius: 20px 0 0 20px;
+}
+header .search input::placeholder{
+    color: #707070;
+    padding-left: 20px;
+}
+header button{
+    width: 50px;
+    height: 49px;
+    background-color: #888888;
+    position: absolute;
+    top: 80px; left: 770px;
+    border-radius: 0 20px 20px 0;
+    border: 1px solid #707070;
+}
+header .nav{
+    width: 1200px;
+    position: absolute;
+    top: 150px;
+}
+header .nav ul{
+    float: left;
+    /* display: flex;
+    justify-content: center; */
+}
+header .nav ul li{
+    float: left;
+    background-color: #555;
+    padding-top: 10px;
+    margin: 10px;
+    box-sizing: border-box;
+    width: 220px;
+    height: 50px;
+}
+header .nav ul li a{
+    display: block;
+    text-align: center;
+    color: #BBB;
+    font-size: 30px;
+}
+header .nav ul li.li1{position: relative;}
+header .nav ul li ul.sub1{
+    position: absolute;
+    top: 70px; left: -10px;
+    width: 1200px;
+    margin: -20px 10px;
+    display: none;
+    z-index: 10;
+}
+header .nav ul li ul.sub1 li{
+    background-color: #4D0000;
+    width: 236px;
+    height: 60px;
+    margin: 0;
+}
+header .nav ul li ul.sub1 li ul{
+    padding-top: 20px;
+}
+header .nav ul li ul.sub1 li ul.sub1-1 .h{
+    height: 120px;
+}
+header .nav ul li ul.sub1 li ul.sub1-1 .h2{
+    height: 180px;
+}
+header .nav ul li.li2{position: relative;}
+header .nav ul li:hover{background-color: #4D0000;}
+header .nav ul li ul.sub2{
+    position: absolute;
+    top: 70px; left: -10px;
+    display: none;
+    z-index: 10;
+}
+header .nav ul li ul.sub2 li{
+    background-color: #4D0000;
+    margin: 1px 10px;
+}
+/* header */
+#use ul{
+    display: flex;
+    justify-content: center;
+}
+#use ul li{
+    padding: 10px 60px;
+    font-size: 13px;
+}
+footer{
+    width: 1200px;
+    height: 140px;
+    background-color: #555555;
+}
+footer >div{
+    float: left;
+    color: #BBBBBB;
+}
+footer .foot1{
+    width: 300px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+footer .foot2{
+    width: 350px;
+    float: left;
+}
+footer .foot2 ul{
+    margin-top: 28px;
+}
+footer .foot2 ul li {
+    width:300px;
+    padding: 3px;
+    font-size: 14px;
+}
+footer .line{
+    float: left;
+    height: 100px;
+    border: 1px solid #BBBBBB;
+    margin-top: 20px;
+    margin-right: 30px;
+}
+footer .foot3{
+    width: 500px;
+    float: left;
+}
+footer .foot3 ul{
+    margin-top: 28px;
+}
+footer .foot3 ul li{
+    padding: 3px;
+    font-size: 14px;
+}
+footer .foot3 ul li.cs{
+    font-size: 30px;
+}
+/* footer */
+/* 주문작성 */
+section{
+    width: 100%;
+    height: 100%;
+    margin: 0 30px;
+}
+section #tit{
+    margin-top: 50px;
+}
+section #tit h2{
+    float: left;
+    font-size: 35px;
+}
+section #tit h3{
+    float: left;
+    font-size: 25px;
+    margin-left: 300px;
+}
+section #tit h3 span{
+    color: #4D0000;
+}
+section #tit .line{
+    width: 97%;
+    text-align: center;
+    border-bottom: 1px solid #BBB;
+    padding-top: 40px;
+}
+/* 결제수단 표 */
+#pay h3{
+    font-size: 25px;
+    margin-top: 60px;
+    margin-bottom: 10px;
+}
+#card table{
+    width: 97%;
+    font-size: 20px;
+}
+#card table .tr1, #card table .tr2{
+    width: 100%;
+    height: 80px;
+    background-color: #bbb;
+    text-align: center;
+}
+#card table .tr1 td, #card table .tr2 td{
+    padding-top: 20px;
+}
+#card table .tr1{
+    border-top: 1px solid #555;
+}
+#card table .tr2{
+    border-bottom: 1px solid #555;
+}
+.tr3 , .tr4{
+    border-bottom: 1px solid #555;
+}
+#card table .tr3 th, #card table .tr4 th{
+    background-color: #bbb;
+    width: 220px;
+    height: 45px;
+    padding-top: 15px;
+}
+#card table select{
+    width: 200px;
+    margin-left: 30px;
+}
+#pay p{
+    font-size: 20px;
+    margin-top: 30px;
+}
+/* 결제하기 버튼 */
+#btn{
+    text-align: center;
+}
+#btn a{
+    display: inline-block;
+    width: 275px;
+    height: 58px;
+    color: #fff;
+    text-align: center;
+    padding-top: 15px;
+    box-sizing: border-box;
+    margin-top: 50px;
+}
+#btn .cancel{
+    background-color: #bbb;
+}
+#btn .complete{
+    background-color: #4D0000;
+}
+/* 탑버튼 */
+.cont3{
+    background-color: #BBBBBB;
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+    text-align:center;
+    margin: 30px 550px;
+}
+.cont3 h5{
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 10px;
+}
+.cont3 h5 span{
+    display: block;
+}

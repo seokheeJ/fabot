@@ -1,0 +1,87 @@
+@charset "utr-8";
+@import url(https://meyerweb.com/eric/tools/css/reset/reset.css);
+
+section{ 
+    font-family: 'Nanum Gothic', sans-serif; 
+    width: 1200px;
+}
+
+#event_link ul{
+    clear: both;
+}
+
+#event_link ul li{
+    /* display: inline-block; */
+    float: left;
+    margin: 5px;
+    line-height: 40px;
+
+}
+
+#event_title h2{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+#event_detail{
+    text-align: center;
+}
+#event_detail h3{
+    
+    font-size: 50px;
+    color: #4D0000;
+    margin: 42.5px 0 21px 0;
+}
+#event_detail h4{
+    font-size: 40px;
+    color: #555;
+    margin: 22px;
+}
+#event_detail h5{
+    font-size: 25px;
+    color: #555;
+    margin: 22px;
+}
+
+#evnet_product ul{
+
+}
+
+#evnet_product ul li{
+    float: left;
+    width: 270px;
+    text-align: center;
+    margin: 7px;
+}
+
+.price1{
+    text-decoration: line-through;
+    color: #bbb;
+    font-size: 18px;
+    margin: 5px;
+}
+.price2{
+    color: #4d0000;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+#ic_top{
+    text-align: center;
+    margin: 39px;
+}
+
+#ic_list{
+    float: left;   
+    position: absolute;
+    left: 1100px;
+    top: 1540px;
+}
+
+
+
+
+
